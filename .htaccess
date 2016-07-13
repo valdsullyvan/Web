@@ -1,0 +1,30 @@
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+Options -Indexes
+ErrorDocument 400 400.php
+ErrorDocument 401 401.php
+ErrorDocument 402 402.php
+ErrorDocument 403 403.php
+ErrorDocument 404 404.php
+ErrorDocument 405 405.php
+ErrorDocument 406 406.php
+ErrorDocument 407 407.php
+ErrorDocument 408 408.php
+ErrorDocument 409 409.php
+ErrorDocument 410 410.php
+ErrorDocument 411 411.php
+ErrorDocument 412 412.php
+ErrorDocument 413 413.php
+ErrorDocument 414 414.php
+ErrorDocument 500 500.php
+ErrorDocument 501 501.php
+ErrorDocument 502 502.php
+ErrorDocument 503 503.php
+ErrorDocument 504 504.php
+ErrorDocument 505 505.php
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(www\.host\.ndd)(:80)? [NC]
+RewriteRule ^(.*) http://host.ndd/$1 [R=301,L]
+DirectoryIndex index.php
+order deny,allow
