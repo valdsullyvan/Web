@@ -2,27 +2,27 @@
 deny from all
 </Files>
 Options -Indexes
-ErrorDocument 400 400.php
-ErrorDocument 401 401.php
-ErrorDocument 402 402.php
-ErrorDocument 403 403.php
-ErrorDocument 404 404.php
-ErrorDocument 405 405.php
-ErrorDocument 406 406.php
-ErrorDocument 407 407.php
-ErrorDocument 408 408.php
-ErrorDocument 409 409.php
-ErrorDocument 410 410.php
-ErrorDocument 411 411.php
-ErrorDocument 412 412.php
-ErrorDocument 413 413.php
-ErrorDocument 414 414.php
-ErrorDocument 500 500.php
-ErrorDocument 501 501.php
-ErrorDocument 502 502.php
-ErrorDocument 503 503.php
-ErrorDocument 504 504.php
-ErrorDocument 505 505.php
+ErrorDocument 400 host.ndd/400.php
+ErrorDocument 401 host.ndd/401.php
+ErrorDocument 402 host.ndd/402.php
+ErrorDocument 403 host.ndd/403.php
+ErrorDocument 404 host.ndd/404.php
+ErrorDocument 405 host.ndd/405.php
+ErrorDocument 406 host.ndd/406.php
+ErrorDocument 407 host.ndd/407.php
+ErrorDocument 408 host.ndd/408.php
+ErrorDocument 409 host.ndd/409.php
+ErrorDocument 410 host.ndd/410.php
+ErrorDocument 411 host.ndd/411.php
+ErrorDocument 412 host.ndd/412.php
+ErrorDocument 413 host.ndd/413.php
+ErrorDocument 414 host.ndd/414.php
+ErrorDocument 500 host.ndd/500.php
+ErrorDocument 501 host.ndd/501.php
+ErrorDocument 502 host.ndd/502.php
+ErrorDocument 503 host.ndd/503.php
+ErrorDocument 504 host.ndd/504.php
+ErrorDocument 505 host.ndd/505.php
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^(www\.host\.ndd)(:80)? [NC]
 RewriteRule ^(.*) http://host.ndd/$1 [R=301,L]
